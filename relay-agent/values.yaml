@@ -1,0 +1,27 @@
+replicaCount: 1
+
+namespace:
+  enabled: true
+  name: blog
+
+image:
+  repository: webhookrelay/webhookrelayd
+  pullPolicy: IfNotPresent
+
+volumes:
+  secrets:
+    name: whr-credentials
+  bucket:
+    name: github-jenkins
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}

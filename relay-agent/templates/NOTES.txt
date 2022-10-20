@@ -1,0 +1,9 @@
+Webhook Relay Agent for Kubernetes
+
+- Release Name: {{ .Chart.Name }}-{{ .Chart.Version }}
+- Webhook Relay Version: {{ .Chart.AppVersion }}
+
+All kubernetes objects are deployed into "{{ .Values.namespace.name }}" namespace!
+Secrets are stored in Repository secrets.
+
+HAPPY ROUTING!
